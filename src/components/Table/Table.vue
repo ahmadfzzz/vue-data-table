@@ -40,7 +40,6 @@
                 </tr>
 
                 <tr v-for="(data, i) in dataDisplayed" :key="i">
-                    <td v-for="(column, j) in columns" :key="j" v-html="data[column.key]"></td>
 
                     <!-- display action components in multiple cells (if actionMode is multiple) -->
                     <td class="action-cell" v-for="action in actionColumns" :key="action.name" >
